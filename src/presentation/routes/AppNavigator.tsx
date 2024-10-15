@@ -13,6 +13,11 @@ import { FormPage8 } from '../screens/forms/chapters/cap3/FormPage8';
 import { FormPage9 } from '../screens/forms/chapters/cap3/FormPage9';
 import { FormPage10 } from '../screens/forms/chapters/cap3/FormPage10';
 import { FormPage11 } from '../screens/forms/chapters/cap3/FormPage11';
+import { FormPage12 } from '../screens/forms/chapters/cap3/FormPage12';
+import { FormPage13 } from '../screens/forms/chapters/cap3/FormPage13';
+import { FormPage14 } from '../screens/forms/chapters/cap3/FormPage14';
+import { FormPage15 } from '../screens/forms/chapters/cap3/FormPage15';
+import { FormPage16 } from '../screens/forms/chapters/cap4/FormPage16';
 
 const Stack = createStackNavigator();
 
@@ -39,6 +44,11 @@ export const AppNavigator = () => {
       <Stack.Screen name="page9" component={FormPage9} />
       <Stack.Screen name="page10" component={FormPage10} />
       <Stack.Screen name="page11" component={FormPage11} />
+      <Stack.Screen name="page12" component={FormPage12} />
+      <Stack.Screen name="page13" component={FormPage13} />
+      <Stack.Screen name="page14" component={FormPage14} />
+      <Stack.Screen name="page15" component={FormPage15} />
+      <Stack.Screen name="page16" component={FormPage16} />
     </Stack.Navigator>
   );
 }

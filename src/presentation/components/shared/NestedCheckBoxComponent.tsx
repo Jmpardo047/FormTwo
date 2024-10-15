@@ -10,12 +10,12 @@ export interface SubOption {
 
 interface NestedCheckboxProps {
   mainOptions: { label: string; value: string }[];
-  subOptions: [SubOption[], SubOption[], SubOption[]];
+  subOptions: [SubOption[], SubOption[], SubOption[], SubOption[]];
   mainName: string;
-  subNames: [string, string, string];
+  subNames: [string, string, string, string];
   inputNames: [string, string];
   mainQTitle: string;
-  subQTitles: [string, string, string];
+  subQTitles: [string, string, string, string];
   inputQTitles: [string, string];
 }
 
@@ -101,6 +101,17 @@ export const NestedCheckBox = ({
               />
             </View>
           )}
+          {index === 3 && (
+            <View>
+              <Text style={globalStyles.nestedQuestionHeader}>{inputQTitles[1]}</Text>
+              <TextInput
+                style={globalStyles.nestedCounterField}
+                keyboardType="numeric"
+                value={counterField2.value}
+                onChangeText={handleCounterChange2}
+              />
+            </View>
+          )}
           <Text style={globalStyles.nestedQuestionHeader}>{subQTitles[index]}</Text>
           {subOptions[index].map((subOption) => (
             <TouchableOpacity
@@ -118,15 +129,7 @@ export const NestedCheckBox = ({
           ))}
         </View>
       ))}
-      <View>
-            <Text style={globalStyles.nestedQuestionHeader}>{inputQTitles[1]}</Text>
-            <TextInput
-              style={globalStyles.nestedCounterField}
-              keyboardType="numeric"
-              value={counterField2.value}
-              onChangeText={handleCounterChange2}
-            />
-      </View>
+
       <View style={{marginBottom:5}}><Text></Text></View>
     </View>
   );

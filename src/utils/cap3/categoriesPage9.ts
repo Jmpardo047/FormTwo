@@ -7,9 +7,9 @@ export const opt18_6_1 = [
 export const opt19_6_1 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.1.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.1.2' },
-    { label: "Actuó de forma violenta", value: '19.6.1.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.1.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.1.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.1.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.1.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.1.5' },
 ];
 
 export const opt21_6_1 : SubOption[]  = [
@@ -33,9 +33,9 @@ export const opt18_6_2 = [
 export const opt19_6_2 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.2.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.2.2' },
-    { label: "Actuó de forma violenta", value: '19.6.2.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.2.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.2.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.2.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.2.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.2.5' },
 ];
 
 export const opt21_6_2 : SubOption[]  = [
@@ -59,9 +59,9 @@ export const opt18_6_3 = [
 export const opt19_6_3 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.3.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.3.2' },
-    { label: "Actuó de forma violenta", value: '19.6.3.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.3.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.3.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.3.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.3.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.3.5' },
 ];
 
 export const opt21_6_3 : SubOption[]  = [
@@ -85,9 +85,9 @@ export const opt18_6_4 = [
 export const opt19_6_4 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.4.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.4.2' },
-    { label: "Actuó de forma violenta", value: '19.6.4.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.4.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.4.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.4.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.4.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.4.5' },
 ];
 
 export const opt21_6_4 : SubOption[]  = [
@@ -111,9 +111,9 @@ export const opt18_6_5 = [
 export const opt19_6_5 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.5.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.5.2' },
-    { label: "Actuó de forma violenta", value: '19.6.5.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.5.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.5.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.5.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.5.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.5.5' },
 ];
 
 export const opt21_6_5 : SubOption[]  = [
@@ -137,9 +137,9 @@ export const opt18_6_6 = [
 export const opt19_6_6 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.6.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.6.2' },
-    { label: "Actuó de forma violenta", value: '19.6.6.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.6.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.6.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.6.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.6.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.6.5' },
 ];
 
 export const opt21_6_6 : SubOption[]  = [
@@ -163,9 +163,9 @@ export const opt18_6_7 = [
 export const opt19_6_7 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.7.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.7.2' },
-    { label: "Actuó de forma violenta", value: '19.6.7.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.7.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.7.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.7.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.7.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.7.5' },
 ];
 
 export const opt21_6_7 : SubOption[]  = [
@@ -189,9 +189,9 @@ export const opt18_6_8 = [
 export const opt19_6_8 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.8.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.8.2' },
-    { label: "Actuó de forma violenta", value: '19.6.8.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.8.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.8.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.8.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.8.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.8.5' },
 ];
 
 export const opt21_6_8 : SubOption[]  = [
@@ -215,9 +215,9 @@ export const opt18_6_9 = [
 export const opt19_6_9 : SubOption[] = [
     { label: "Acudió a una institución, autoridad o persona particular -> Pase a 20", value: '19.6.9.1' },
     { label: "Intentó llegar a un acuerdo directamente con quien tuvo el problema -> Pase a 22", value: '19.6.9.2' },
-    { label: "Actuó de forma violenta", value: '19.6.9.3 -> Pase a 22' },
-    { label: "Acudió a un actor ilegal", value: '19.6.9.4 -> Pase a 22' },
-    { label: "No hizo nada", value: '19.6.9.5 -> Pase a 22' },
+    { label: "Actuó de forma violenta -> Pase a 22", value: '19.6.9.3' },
+    { label: "Acudió a un actor ilegal -> Pase a 22", value: '19.6.9.4' },
+    { label: "No hizo nada -> Pase a 22", value: '19.6.9.5' },
 ];
 
 export const opt21_6_9 : SubOption[]  = [
@@ -231,4 +231,49 @@ export const opt22_6_9 : SubOption[]  = [
     { label: "Media", value: '22.6.9.3' },
     { label: "Alta", value: '22.6.9.4' },
     { label: "Muy alta", value: '22.6.9.5' },
+];
+
+export const opt24_6_1 : SubOption[]  = [
+    { label: "Si", value: '24.6.1.1' },
+    { label: "No", value: '24.6.1.2' },
+];
+
+export const opt24_6_2 : SubOption[]  = [
+    { label: "Si", value: '24.6.2.1' },
+    { label: "No", value: '24.6.2.2' },
+];
+
+export const opt24_6_3 : SubOption[]  = [
+    { label: "Si", value: '24.6.3.1' },
+    { label: "No", value: '24.6.3.2' },
+];
+
+export const opt24_6_4 : SubOption[]  = [
+    { label: "Si", value: '24.6.4.1' },
+    { label: "No", value: '24.6.4.2' },
+];
+
+export const opt24_6_5 : SubOption[]  = [
+    { label: "Si", value: '24.6.5.1' },
+    { label: "No", value: '24.6.5.2' },
+];
+
+export const opt24_6_6 : SubOption[]  = [
+    { label: "Si", value: '24.6.6.1' },
+    { label: "No", value: '24.6.6.2' },
+];
+
+export const opt24_6_7 : SubOption[]  = [
+    { label: "Si", value: '24.6.7.1' },
+    { label: "No", value: '24.6.7.2' },
+];
+
+export const opt24_6_8 : SubOption[]  = [
+    { label: "Si", value: '24.6.8.1' },
+    { label: "No", value: '24.6.8.2' },
+];
+
+export const opt24_6_9 : SubOption[]  = [
+    { label: "Si", value: '24.6.9.1' },
+    { label: "No", value: '24.6.9.2' },
 ];

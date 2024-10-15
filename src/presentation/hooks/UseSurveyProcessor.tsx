@@ -21,7 +21,7 @@ export const useSurveyProcessor = () => {
 
   const readJsonFiles = async () => {
     try {
-      const path = '/data/data/com.formone/files';
+      const path = '/data/data/com.formtwo/files';
       const result = await RNFS.readDir(path);
       const jsonFiles = result.filter(file => file.name.endsWith('.json'));
 
@@ -69,7 +69,7 @@ export const useSurveyProcessor = () => {
         if (response.status === 500) {
           const errorText = await response.text();
           console.error(`Server error details for ${file.name}:`, errorText);
-          throw new Error(`Error interno del servidor al procesar ${file.name}. Por favor, contacte al soporte técnico.`);
+          throw new Error(`Error interno del servidor al procesar ${file.name}.`);
         }
         throw new Error(`HTTP error! status: ${response.status}`);
       }

@@ -15,14 +15,14 @@ export const UseSaveData = () => {
         const saveAllData = useCallback(async (fileName: string, data: any, surveyId: string) => {
             try {
               const path = `${RNFS.DocumentDirectoryPath}/${fileName}`;
-              let currentData: SurveyData = { surveyid: 1, payload: {responses : []} };
+              let currentData: SurveyData = { surveyid: 4, payload: {responses : []} };
         
               try {
                 const fileContent = await RNFS.readFile(path, 'utf8');
                 currentData = JSON.parse(fileContent);
                 // Ensure surveyId is set to 1 if it doesn't exist in the current data
                 if (!currentData.hasOwnProperty('surveyId')) {
-                  currentData.surveyid = 1;
+                  currentData.surveyid = 4;
                 }
               } catch (readError) {
                 // If file doesn't exist or is empty, we'll use the default currentData
@@ -90,7 +90,7 @@ export const UseSaveData = () => {
               const hours = String(now.getTime());
 
               const path = `${RNFS.DocumentDirectoryPath}/${fileName}`;
-              let currentData: SurveyData = { surveyid: 1, payload: {responses : []} }; // Inicializa con una estructura válida
+              let currentData: SurveyData = { surveyid: 4, payload: {responses : []} }; // Inicializa con una estructura válida
               const fileExists = await RNFS.exists(path);
               const newSurvey = {
                   nroEnCuesta: newSurveyId, 
@@ -114,7 +114,7 @@ export const UseSaveData = () => {
                   Alert.alert(`File ${fileName} updated`);
               } else {
                   const newData: SurveyData = {
-                      surveyid : 1,
+                      surveyid : 4,
                       payload: {responses: [newSurvey]}
                   };
                   const jsonValue = JSON.stringify(newData, null, 2);

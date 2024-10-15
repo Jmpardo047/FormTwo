@@ -13,7 +13,7 @@ import { fileName } from '../../../../../utils/generateFilename';
 import { getInitialValuesPage7 } from '../../../../../utils/initialValues';
 import { validationSchemaPage3 } from '../../../../../utils/cap2/validationSchema';
 import { NestedCheckBox } from '../../../../components/shared/NestedCheckBoxComponent';
-import { opt18_4_1, opt18_4_2, opt18_4_3, opt18_4_4, opt18_4_5, opt18_4_6, opt18_4_7, opt19_4_1, opt19_4_2, opt19_4_3, opt19_4_4, opt19_4_5, opt19_4_6, opt19_4_7, opt21_4_1, opt21_4_2, opt21_4_3, opt21_4_4, opt21_4_5, opt21_4_6, opt21_4_7, opt22_4_1, opt22_4_2, opt22_4_3, opt22_4_4, opt22_4_5, opt22_4_6, opt22_4_7 } from '../../../../../utils/cap3/categoriesPage7';
+import { opt18_4_1, opt18_4_2, opt18_4_3, opt18_4_4, opt18_4_5, opt18_4_6, opt18_4_7, opt19_4_1, opt19_4_2, opt19_4_3, opt19_4_4, opt19_4_5, opt19_4_6, opt19_4_7, opt21_4_1, opt21_4_2, opt21_4_3, opt21_4_4, opt21_4_5, opt21_4_6, opt21_4_7, opt22_4_1, opt22_4_2, opt22_4_3, opt22_4_4, opt22_4_5, opt22_4_6, opt22_4_7, opt24_4_1, opt24_4_2, opt24_4_3, opt24_4_4, opt24_4_5, opt24_4_6, opt24_4_7 } from '../../../../../utils/cap3/categoriesPage7';
 
 export interface FormValues{
     P18_4_1: FormTemplate;
@@ -58,6 +58,13 @@ export interface FormValues{
     P21_4_7: FormTemplate;
     P22_4_7: FormTemplate;
     P23_4_7: FormTemplate;    
+    P24_4_1: FormTemplate;
+    P24_4_2: FormTemplate;
+    P24_4_3: FormTemplate;
+    P24_4_4: FormTemplate;
+    P24_4_5: FormTemplate;
+    P24_4_6: FormTemplate;
+    P24_4_7: FormTemplate;
 }
 
 
@@ -101,78 +108,78 @@ export const FormPage7 = () => {
                         
                         <NestedCheckBox
                             mainOptions={opt18_4_1}
-                            subOptions={[opt19_4_1, opt21_4_1, opt22_4_1]}
+                            subOptions={[opt19_4_1, opt21_4_1, opt22_4_1, opt24_4_1]}
                             mainName='P18_4_1.response[0].responseuser'
-                            subNames={['P19_4_1.response[0].responseuser','P21_4_1.response[0].responseuser','P22_4_1.response[0].responseuser']}
+                            subNames={['P19_4_1.response[0].responseuser','P21_4_1.response[0].responseuser','P22_4_1.response[0].responseuser','P24_4_1.response[0].responseuser']}
                             inputNames={['P20_4_1.response[0].responseuser','P23_4_1.response[0].responseuser']}
                             mainQTitle='4.1 Reconocimiento y formalización de relación laboral o contractual'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
                         <NestedCheckBox
                             mainOptions={opt18_4_2}
-                            subOptions={[opt19_4_2, opt21_4_2, opt22_4_2]}
+                            subOptions={[opt19_4_2, opt21_4_2, opt22_4_2, opt24_4_2]}
                             mainName='P18_4_2.response[0].responseuser'
-                            subNames={['P19_4_2.response[0].responseuser','P21_4_2.response[0].responseuser','P22_4_2.response[0].responseuser']}
+                            subNames={['P19_4_2.response[0].responseuser','P21_4_2.response[0].responseuser','P22_4_2.response[0].responseuser', 'P24_4_2.response[0].responseuser']}
                             inputNames={['P20_4_2.response[0].responseuser','P23_4_2.response[0].responseuser']}
                             mainQTitle='4.2 Despido y liquidación de relación laboral y contractual'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
                         <NestedCheckBox
                             mainOptions={opt18_4_3}
-                            subOptions={[opt19_4_3, opt21_4_3, opt22_4_3]}
+                            subOptions={[opt19_4_3, opt21_4_3, opt22_4_3, opt24_4_3]}
                             mainName='P18_4_3.response[0].responseuser'
-                            subNames={['P19_4_3.response[0].responseuser','P21_4_3.response[0].responseuser','P22_4_3.response[0].responseuser']}
+                            subNames={['P19_4_3.response[0].responseuser','P21_4_3.response[0].responseuser','P22_4_3.response[0].responseuser','P24_4_3.response[0].responseuser']}
                             inputNames={['P20_4_3.response[0].responseuser','P23_4_3.response[0].responseuser']}
                             mainQTitle='4.3 Remuneración, pago de salario, jornal, pagos en especie, liquidación de prestaciones sociales (vacaciones, horas extra, cesantías, primas)'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
                         <NestedCheckBox
                             mainOptions={opt18_4_4}
-                            subOptions={[opt19_4_4, opt21_4_4, opt22_4_4]}
+                            subOptions={[opt19_4_4, opt21_4_4, opt22_4_4, opt24_4_4]}
                             mainName='P18_4_4.response[0].responseuser'
-                            subNames={['P19_4_4.response[0].responseuser','P21_4_4.response[0].responseuser','P22_4_4.response[0].responseuser']}
+                            subNames={['P19_4_4.response[0].responseuser','P21_4_4.response[0].responseuser','P22_4_4.response[0].responseuser', 'P24_4_4.response[0].responseuser']}
                             inputNames={['P20_4_4.response[0].responseuser','P23_4_4.response[0].responseuser']}
                             mainQTitle='4.4 Perjuicios ocasionados por las condiciones en el ejercicio del trabajo, lugar de trabajo, dotación, no pago de aportes a seguridad social y riesgos laborales'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
                         <NestedCheckBox
                             mainOptions={opt18_4_5}
-                            subOptions={[opt19_4_5, opt21_4_5, opt22_4_5]}
+                            subOptions={[opt19_4_5, opt21_4_5, opt22_4_5, opt24_4_5]}
                             mainName='P18_4_5.response[0].responseuser'
-                            subNames={['P19_4_5.response[0].responseuser','P21_4_5.response[0].responseuser','P22_4_5.response[0].responseuser']}
+                            subNames={['P19_4_5.response[0].responseuser','P21_4_5.response[0].responseuser','P22_4_5.response[0].responseuser', 'P24_4_5.response[0].responseuser']}
                             inputNames={['P20_4_5.response[0].responseuser','P23_4_5.response[0].responseuser']}
                             mainQTitle='4.5 Pertenecer a un sindicato, participar en huelgas, incumplimiento de convenciones colectivas o pactos laborales'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
                         <NestedCheckBox
                             mainOptions={opt18_4_6}
-                            subOptions={[opt19_4_6, opt21_4_6, opt22_4_6]}
+                            subOptions={[opt19_4_6, opt21_4_6, opt22_4_6, opt24_4_6]}
                             mainName='P18_4_6.response[0].responseuser'
-                            subNames={['P19_4_6.response[0].responseuser','P21_4_6.response[0].responseuser','P22_4_6.response[0].responseuser']}
+                            subNames={['P19_4_6.response[0].responseuser','P21_4_6.response[0].responseuser','P22_4_6.response[0].responseuser', 'P24_4_6.response[0].responseuser']}
                             inputNames={['P20_4_6.response[0].responseuser','P23_4_6.response[0].responseuser']}
                             mainQTitle='4.6 Maltrato y acoso laboral'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
                         <NestedCheckBox
                             mainOptions={opt18_4_7}
-                            subOptions={[opt19_4_7, opt21_4_7, opt22_4_7]}
+                            subOptions={[opt19_4_7, opt21_4_7, opt22_4_7, opt24_4_7]}
                             mainName='P18_4_7.response[0].responseuser'
-                            subNames={['P19_4_7.response[0].responseuser','P21_4_7.response[0].responseuser','P22_4_7.response[0].responseuser']}
+                            subNames={['P19_4_7.response[0].responseuser','P21_4_7.response[0].responseuser','P22_4_7.response[0].responseuser', 'P24_4_7.response[0].responseuser']}
                             inputNames={['P20_4_7.response[0].responseuser','P23_4_7.response[0].responseuser']}
                             mainQTitle='4.7 Negación de licencias (maternidad, paternidad, luto, no remuneradas) o indemnizaciones.'
-                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?']}
+                            subQTitles={['P19. ¿Frente a este problema qué acción tomó?', 'P21. ¿Le brindaron información suficiente para entender y resolver el problema?', 'P22. Según la siguiente escala ¿Cuál es el nivel de afectación que le causó el problema?','P24. ¿El problema se solucionó?']}
                             inputQTitles={['P20. ¿A qué institución acudió?', 'P23. ¿Cuánto dinero gastó en total para intentar resolver el problema?']}
                         />
 
