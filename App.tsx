@@ -4,7 +4,7 @@ import { AppNavigator } from './src/presentation/routes/AppNavigator';
 import { SurveyProvider } from './src/context/SurveyContext';
 import { FormProvider } from './src/context/FormContext';
 
-export const App = ()  => {
+const App = ()  => {
   return (
     <SurveyProvider>
       <NavigationContainer>
@@ -13,3 +13,4 @@ export const App = ()  => {
     </SurveyProvider>
   )
 }
+export default App;

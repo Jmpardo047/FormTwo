@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 
 interface DropDownProps {
   values: string[]; 

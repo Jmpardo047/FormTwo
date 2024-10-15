@@ -1,6 +1,6 @@
 import React from 'react'
 import { Pressable, Text } from 'react-native'
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme'
+import { globalStyles } from '../../theme/theme';
 
 interface Props{
     label: string;

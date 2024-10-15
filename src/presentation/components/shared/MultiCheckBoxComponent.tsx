@@ -1,7 +1,7 @@
 import { useField } from 'formik';
 import React, { useState } from 'react';
 import { Text, TouchableOpacity, View, TextInput } from 'react-native';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 
 interface CheckboxProps {
   options: { label: string, value: string }[];

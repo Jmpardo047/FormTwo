@@ -2,7 +2,7 @@ import React from 'react'
 import { Pressable, View } from 'react-native'
 import { Button, FAB } from 'react-native-paper'
 import Icon from "react-native-vector-icons/Ionicons"
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme'
+import { globalStyles } from '../../theme/theme';
 interface PrevProps{
   onPrevPressed: () => void;
 }

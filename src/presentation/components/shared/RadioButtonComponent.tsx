@@ -1,7 +1,7 @@
 import { Field, useField } from 'formik'
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 
 interface RadioButtonProps {
   options : {label: string, value: string}[];

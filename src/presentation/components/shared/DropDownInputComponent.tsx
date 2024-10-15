@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 
 interface DoubleDropdownProps {
   categoryTitle: string;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, ScrollView, Platform } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 import { FormTemplate } from '../../../../../../react-native/FormOne/src/utils/FormInterfaces';
 
 interface InputComponentProps {

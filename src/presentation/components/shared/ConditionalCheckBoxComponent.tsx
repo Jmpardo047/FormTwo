@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { useField } from 'formik';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 
 interface Option {
   label: string;
@@ -89,7 +89,7 @@ export const ConditionalMultiCheckBox = ({
         {showMultiCheckBox && (
           <View>
             <Text style={globalStyles.questionTitle}>
-              P. 32. ¿Cuáles de las siguientes subcategorías de barreras de acceso 
+              P. 16. ¿Cuáles de las siguientes subcategorías de barreras de acceso 
               a la justicia se presentan en el municipio? Marcar con X
             </Text>
             <View style={globalStyles.optionsContainer}>

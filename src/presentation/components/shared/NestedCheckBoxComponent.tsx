@@ -1,7 +1,7 @@
 import { useField } from 'formik';
 import React, { useState } from 'react';
 import { Text, TouchableOpacity, View, TextInput } from 'react-native';
-import { globalStyles } from '../../../../../../react-native/FormOne/src/presentation/theme/theme';
+import { globalStyles } from '../../theme/theme';
 
 export interface SubOption {
   label: string;
@@ -13,10 +13,10 @@ interface NestedCheckboxProps {
   subOptions: [SubOption[], SubOption[], SubOption[]];
   mainName: string;
   subNames: [string, string, string];
-  counterName: string;
+  inputNames: [string, string];
   mainQTitle: string;
   subQTitles: [string, string, string];
-  counterQTitle: string;
+  inputQTitles: [string, string];
 }
 
 export const NestedCheckBox = ({ 
@@ -24,14 +24,15 @@ export const NestedCheckBox = ({
   subOptions, 
   mainName, 
   subNames, 
-  counterName,
+  inputNames,
   mainQTitle, 
   subQTitles,
-  counterQTitle
+  inputQTitles
 }: NestedCheckboxProps) => {
   const [mainField, mainMeta, mainHelpers] = useField(mainName);
   const subFields = subNames.map(name => useField(name));
-  const [counterField, counterMeta, counterHelpers] = useField(counterName);
+  const [counterField1, counterMeta1, counterHelpers1] = useField(inputNames[0]);
+  const [counterField2, counterMeta2, counterHelpers2] = useField(inputNames[1]);
 
   const [expandedOption, setExpandedOption] = useState<string | null>(null);
 
@@ -43,7 +44,8 @@ export const NestedCheckBox = ({
       subFields.forEach(([_, __, subHelper]) => {
         subHelper.setValue([]);
       });
-      counterHelpers.setValue('');
+      counterHelpers1.setValue('');
+      counterHelpers2.setValue('');
     } else {
       mainHelpers.setValue([...currentValues, selectedValue]);
       setExpandedOption(selectedValue);
@@ -60,8 +62,12 @@ export const NestedCheckBox = ({
     }
   };
 
-  const handleCounterChange = (value: string) => {
-    counterHelpers.setValue(value);
+  const handleCounterChange1 = (value: string) => {
+    counterHelpers1.setValue(value);
+  };
+
+  const handleCounterChange2 = (value: string) => {
+    counterHelpers2.setValue(value);
   };
 
   const renderMainCheckbox = (option: { label: string; value: string }) => (
@@ -85,6 +91,16 @@ export const NestedCheckBox = ({
     <View style={globalStyles.nestedSubOptionsContainer}>
       {subNames.map((subName, index) => (
         <View key={subName}>
+          {index === 1 && (
+            <View>
+              <Text style={globalStyles.nestedQuestionHeader}>{inputQTitles[0]}</Text>
+              <TextInput
+                style={globalStyles.nestedCounterField}
+                value={counterField1.value}
+                onChangeText={handleCounterChange1}
+              />
+            </View>
+          )}
           <Text style={globalStyles.nestedQuestionHeader}>{subQTitles[index]}</Text>
           {subOptions[index].map((subOption) => (
             <TouchableOpacity
@@ -103,14 +119,15 @@ export const NestedCheckBox = ({
         </View>
       ))}
       <View>
-        <Text style={globalStyles.nestedQuestionHeader}>{counterQTitle}</Text>
-        <TextInput
-          style={globalStyles.nestedCounterField}
-          keyboardType="numeric"
-          value={counterField.value}
-          onChangeText={handleCounterChange}
-        />
+            <Text style={globalStyles.nestedQuestionHeader}>{inputQTitles[1]}</Text>
+            <TextInput
+              style={globalStyles.nestedCounterField}
+              keyboardType="numeric"
+              value={counterField2.value}
+              onChangeText={handleCounterChange2}
+            />
       </View>
+      <View style={{marginBottom:5}}><Text></Text></View>
     </View>
   );
 
